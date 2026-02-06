@@ -42,43 +42,76 @@ filterButtons.forEach(button => {
 const videoItems = document.querySelectorAll('.video-item');
 videoItems.forEach(item => {
     item.addEventListener('click', () => {
-        // In a real implementation, this would open a video modal or navigate to video page
-        alert('Video playback would open here. Replace with actual video URL or modal.');
+        const videoThumbnail = item.querySelector('.video-thumbnail');
+        const video = item.querySelector('video');
+        
+        if (video && videoThumbnail) {
+            // Hide thumbnail and play button
+            videoThumbnail.style.display = 'none';
+            // Show and play video
+            video.style.display = 'block';
+            video.controls = true;
+            video.play().catch(err => {
+                console.error('Error playing video:', err);
+            });
+        }
     });
 });
 
 // Lightbox for images (simple implementation)
-const photoItemsImages = document.querySelectorAll('.photo-item img');
-photoItemsImages.forEach(img => {
-    img.addEventListener('click', () => {
-        // Create lightbox
-        const lightbox = document.createElement('div');
-        lightbox.className = 'lightbox';
-        lightbox.innerHTML = `
-            <div class="lightbox-content">
-                <img src="${img.src}" alt="${img.alt}">
-                <button class="lightbox-close">&times;</button>
-            </div>
-        `;
-        document.body.appendChild(lightbox);
-        document.body.style.overflow = 'hidden';
+function initLightbox() {
+    const photoItems = document.querySelectorAll('.photo-item');
+    photoItems.forEach(item => {
+        const img = item.querySelector('img');
+        if (!img) return;
         
-        // Close lightbox
-        const closeBtn = lightbox.querySelector('.lightbox-close');
-        const closeLightbox = () => {
-            lightbox.remove();
-            document.body.style.overflow = '';
-        };
-        
-        closeBtn.addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) closeLightbox();
-        });
-        
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox();
+        // Add click handler to the entire photo-item
+        item.addEventListener('click', (e) => {
+            // Don't trigger if clicking on overlay (though it's hidden)
+            if (e.target.closest('.photo-overlay')) return;
+            
+            // Create lightbox
+            const lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML = `
+                <div class="lightbox-content">
+                    <img src="${img.src}" alt="${img.alt}">
+                    <button class="lightbox-close">&times;</button>
+                </div>
+            `;
+            document.body.appendChild(lightbox);
+            document.body.style.overflow = 'hidden';
+            
+            // Close lightbox
+            const closeBtn = lightbox.querySelector('.lightbox-close');
+            const closeLightbox = () => {
+                lightbox.remove();
+                document.body.style.overflow = '';
+            };
+            
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeLightbox();
+            });
+            
+            // Close on Escape key
+            const escapeHandler = (e) => {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                    document.removeEventListener('keydown', escapeHandler);
+                }
+            };
+            document.addEventListener('keydown', escapeHandler);
         });
     });
-});
+}
+
+// Initialize lightbox when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLightbox);
+} else {
+    initLightbox();
+}
+
+
 
