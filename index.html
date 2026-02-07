@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Χορευτικό Συγκρότημα 'Ο αλιος' - Χορευτικό Συγκρότημα στην Κέρκυρα">
-    <title>Χορευτικο Συγκροτημα "Ο αλιος" – Χορευτικό Συγκρότημα στην Κέρκυρα</title>
+    <meta name="description" content="Χορευτικό Συγκρότημα 'Ο αλιος' - Χορευτικό Συγκρότημα στην Κέρκυρα" data-translate="home.description">
+    <link rel="icon" type="image/jpeg" href="media/logo.jpg">
+    <title data-translate="home.title">Χορευτικο Συγκροτημα "Ο αλιος" – Χορευτικό Συγκρότημα στην Κέρκυρα</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +20,9 @@
                     <div class="nav-content">
                         <div class="logo">
                             <h1 class="site-title">
-                                <a href="index.html">Ο Άλιος</a>
+                                <a href="index.html" data-translate="brand.name">Ο Άλιος</a>
                             </h1>
-                            <p class="site-subtitle">Χορευτικό Συγκρότημα</p>
+                            <p class="site-subtitle" data-translate="brand.subtitle">Χορευτικό Συγκρότημα</p>
                         </div>
                         <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                             <span></span>
@@ -29,11 +30,14 @@
                             <span></span>
                         </button>
                         <ul class="nav-menu" id="navMenu">
-                            <li><a href="index.html" class="active">Αρχική</a></li>
-                            <li><a href="about.html">Σχετικά</a></li>
-                            <li><a href="join.html">Χόρεψε μαζί μας</a></li>
-                            <li><a href="collaborate.html">Συνεργάσου μαζί μας</a></li>
-                            <li><a href="index.html#contact" class="nav-cta">Επικοινωνία</a></li>
+                            <li><a href="index.html" class="active" data-translate="nav.home">Αρχική</a></li>
+                            <li><a href="about.html" data-translate="nav.about">Σχετικά</a></li>
+                            <li><a href="join.html" data-translate="nav.join">Χόρεψε μαζί μας</a></li>
+                            <li><a href="collaborate.html" data-translate="nav.collaborate">Συνεργαστείτε μαζί μας</a></li>
+                            <li><a href="index.html#contact" class="nav-cta" data-translate="nav.contact">Επικοινωνία</a></li>
+                            <li class="language-switcher">
+                                <button id="languageSwitcher" aria-label="Switch language">EN</button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -49,16 +53,16 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2 class="hero-greeting">Καλώς ορίσατε</h2>
-                    <h1 class="hero-title">Χορευτικό Συγκρότημα<br><span class="highlight">"Ο Άλιος"</span></h1>
-                    <p class="hero-description">Παραδοσιακοί χοροί στην Κέρκυρα από το 1987</p>
+                    <h2 class="hero-greeting" data-translate="home.greeting">Καλώς ορίσατε</h2>
+                    <h1 class="hero-title"><span data-translate="home.title">Χορευτικό Συγκρότημα</span><br><span class="highlight" data-translate="home.titleHighlight">"Ο Άλιος"</span></h1>
+                    <p class="hero-description" data-translate="home.description">Παραδοσιακοί χοροί στην Κέρκυρα από το 1987</p>
                     <div class="hero-actions">
                         <div class="hero-actions-row">
-                            <a href="join.html" class="btn btn-primary">Έλα στην παρέα μας<br><span class="btn-subtitle">Μάθε και χόρεψε μαζί μας</span></a>
-                            <a href="collaborate.html" class="btn btn-primary">Συνεργάσου μαζί μας<br><span class="btn-subtitle">Οργάνωσε παράσταση</span></a>
+                            <a href="join.html" class="btn btn-primary"><span data-translate="home.joinBtn">Έλα στην παρέα μας</span><br><span class="btn-subtitle" data-translate="home.joinBtnSubtitle">Μάθε και χόρεψε μαζί μας</span></a>
+                            <a href="collaborate.html" class="btn btn-primary"><span data-translate="home.collaborateBtn">Συνεργαστείτε μαζί μας</span><br><span class="btn-subtitle" data-translate="home.collaborateBtnSubtitle">Οργανώστε παράσταση</span></a>
                         </div>
                         <div class="hero-actions-row">
-                            <a href="about.html" class="btn btn-secondary">Μάθετε περισσότερα</a>
+                            <a href="about.html" class="btn btn-secondary" data-translate="home.learnMore">Μάθετε περισσότερα</a>
                         </div>
                     </div>
                 </div>
@@ -79,29 +83,29 @@
     <section class="about-section" id="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Σχετικά</span>
-                <h2 class="section-title">Το Συγκρότημα</h2>
+                <span class="section-label" data-translate="home.aboutLabel">Σχετικά</span>
+                <h2 class="section-title" data-translate="home.aboutTitle">Το Συγκρότημα</h2>
             </div>
             <div class="about-grid">
                 <div class="about-card featured">
                     <div class="card-number">1987</div>
-                    <h3>Ιδρύθηκε</h3>
-                    <p>Το χορευτικό συγκρότημα "Ο Άλιος" ιδρύθηκε από τον Ανδρέα Παϊπέτη το 1987. Αποτελείται από περίπου 35 άτομα, χορευτές και χορεύτριες ηλικίας από 16 μέχρι 45 ετών, με τεσσάρων ειδών παραδοσιακές ενδυμασίες.</p>
+                    <h3 data-translate="home.founded">Ιδρύθηκε</h3>
+                    <p data-translate="home.foundedText">Το χορευτικό συγκρότημα "Ο Άλιος" ιδρύθηκε από τον Ανδρέα Παϊπέτη το 1987. Αποτελείται από περίπου 35 άτομα, χορευτές και χορεύτριες ηλικίας από 16 μέχρι 45 ετών, με τεσσάρων ειδών παραδοσιακές ενδυμασίες.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">🎭</div>
-                    <h3>Στόχος</h3>
-                    <p>Να ψυχαγωγεί τους επισκέπτες της Κέρκυρας με χορευτικές παραστάσεις σε ξενοδοχεία και ταβέρνες, καθώς και να φέρνει τους νέους και νέες σε επαφή με την πολιτισμική παράδοση του τόπου μας.</p>
+                    <h3 data-translate="home.goal">Στόχος</h3>
+                    <p data-translate="home.goalText">Να ψυχαγωγεί τους επισκέπτες της Κέρκυρας με χορευτικές παραστάσεις σε ξενοδοχεία και ταβέρνες, καθώς και να φέρνει τους νέους και νέες σε επαφή με την πολιτισμική παράδοση του τόπου μας.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">🎪</div>
-                    <h3>Προγράμματα</h3>
-                    <p>Παρουσιάζουμε προγράμματα με 3, 4 ή 6 χορευτές, με κερκυραϊκούς, στερεοελλαδίτικους-μακεδονίτικους, λαϊκούς χορούς και προαιρετικό πρόγραμμα Oriental.</p>
+                    <h3 data-translate="home.programs">Προγράμματα</h3>
+                    <p data-translate="home.programsText">Παρουσιάζουμε προγράμματα με 3, 4 ή 6 χορευτές, με κερκυραϊκούς, στερεοελλαδίτικους-μακεδονίτικους, λαϊκούς χορούς και προαιρετικό πρόγραμμα Oriental.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">🏨</div>
-                    <h3>Συνεργασίες</h3>
-                    <p>Συνεργαζόμαστε με τα μεγαλύτερα ξενοδοχεία της Κέρκυρας όπως Dafnila Bay, Nissaki Beach, Elea Beach, ξενοδοχεία Aquis κ.α.</p>
+                    <h3 data-translate="home.collaborations">Συνεργασίες</h3>
+                    <p data-translate="home.collaborationsText">Συνεργαζόμαστε με τα μεγαλύτερα ξενοδοχεία της Κέρκυρας όπως Dafnila Bay, Nissaki Beach, Elea Beach, ξενοδοχεία Aquis κ.α.</p>
                 </div>
             </div>
         </div>
@@ -111,39 +115,39 @@
     <section class="training-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Προετοιμασία</span>
-                <h2 class="section-title">Εκπαίδευση Χορευτών</h2>
+                <span class="section-label" data-translate="home.trainingLabel">Προετοιμασία</span>
+                <h2 class="section-title" data-translate="home.trainingTitle">Εκπαίδευση Χορευτών</h2>
             </div>
             <div class="training-layout">
                 <div class="training-content">
                     <div class="content-block">
-                        <h3>Χειμερινή Περίοδος</h3>
-                        <p>Κατά την χειμερινή περίοδο γίνεται η προετοιμασία των νέων χορευτών του συγκροτήματος, με μαθήματα παραδοσιακών, λαϊκών και οριεντάλ χορών από έμπειρους δασκάλους.</p>
+                        <h3 data-translate="home.winterPeriod">Χειμερινή Περίοδος</h3>
+                        <p data-translate="home.winterPeriodText">Κατά την χειμερινή περίοδο γίνεται η προετοιμασία των νέων χορευτών του συγκροτήματος, με μαθήματα παραδοσιακών, λαϊκών και οριεντάλ χορών από έμπειρους δασκάλους.</p>
                     </div>
                     <div class="content-block">
-                        <h3>Επαγγελματική Προετοιμασία</h3>
-                        <p>Όλοι οι χορευτές του συγκροτήματος Άλιος είναι άρτια προετοιμασμένοι κι έτσι εξασφαλίζεται η άριστη απόδοση και ομοιομορφία του χορευτικού συνόλου κατά την χορευτική παράσταση.</p>
+                        <h3 data-translate="home.professionalPrep">Επαγγελματική Προετοιμασία</h3>
+                        <p data-translate="home.professionalPrepText">Όλοι οι χορευτές του συγκροτήματος Άλιος είναι άρτια προετοιμασμένοι κι έτσι εξασφαλίζεται η άριστη απόδοση και ομοιομορφία του χορευτικού συνόλου κατά την χορευτική παράσταση.</p>
                     </div>
                 </div>
                 <div class="training-gallery">
                     <div class="gallery-item large">
                         <img src="media/join/6.jpg" alt="Dance training" loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Εκπαίδευση</span>
+                            <span data-translate="home.training">Εκπαίδευση</span>
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="media/collaborate/24.jpg" alt="Dance performance" loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Προετοιμασία</span>
+                            <span data-translate="home.preparation">Προετοιμασία</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="collaboration-cta">
-                <h3>Οργάνωσε μια παράσταση</h3>
-                <p>Ενδιαφέρεσαι να οργανώσεις μια παράσταση με το συγκρότημα μας;</p>
-                <a href="collaborate.html" class="btn btn-secondary">Συνεργάσου μαζί μας</a>
+                <h3 data-translate="home.organizeShow">Οργανώστε μια παράσταση</h3>
+                <p data-translate="home.organizeShowText">Ενδιαφέρεσαι να οργανώσεις μια παράσταση με το συγκρότημα μας;</p>
+                <a href="collaborate.html" class="btn btn-secondary" data-translate="home.collaborateLink">Συνεργαστείτε μαζί μας</a>
             </div>
         </div>
     </section>
@@ -152,8 +156,8 @@
     <section class="carousel-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Gallery</span>
-                <h2 class="section-title">Στιγμιότυπα</h2>
+                <span class="section-label" data-translate="home.galleryLabel">Gallery</span>
+                <h2 class="section-title" data-translate="home.galleryTitle">Στιγμιότυπα</h2>
             </div>
             <div class="image-carousel" id="imageCarousel">
                 <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous image">
@@ -209,39 +213,39 @@
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Επικοινωνία</span>
-                <h2 class="section-title">Επικοινωνήστε μαζί μας</h2>
-                <p class="section-subtitle">Θα χαρούμε να ακούσουμε από εσάς</p>
+                <span class="section-label" data-translate="home.contactLabel">Επικοινωνία</span>
+                <h2 class="section-title" data-translate="home.contactTitle">Επικοινωνήστε μαζί μας</h2>
+                <p class="section-subtitle" data-translate="home.contactSubtitle">Θα χαρούμε να ακούσουμε από εσάς</p>
             </div>
             <div class="contact-layout">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
                         <div>
-                            <h3>Email</h3>
+                            <h3 data-translate="home.email">Email</h3>
                             <p><a href="mailto:paipetis.a@gmail.com">paipetis.a@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
                         <div>
-                            <h3>Τηλέφωνο</h3>
+                            <h3 data-translate="home.phone">Τηλέφωνο</h3>
                             <p><a href="tel:+306947613388">+30 694 761 3388</a></p>
-                            <p style="margin-top: 8px; font-weight: 500;">Ανδρέας</p>
+                            <p style="margin-top: 8px; font-weight: 500;" data-translate="home.andreas">Ανδρέας</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
                         <div>
-                            <h3>Τοποθεσία</h3>
-                            <p>Κέρκυρα, Ελλάδα</p>
+                            <h3 data-translate="home.location">Τοποθεσία</h3>
+                            <p data-translate="home.locationText">Κέρκυρα, Ελλάδα</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">🎭</div>
                         <div>
-                            <h3>Παραστάσεις</h3>
-                            <p>Διαθέσιμες για ξενοδοχεία, ταβέρνες και εκδηλώσεις</p>
+                            <h3 data-translate="home.shows">Παραστάσεις</h3>
+                            <p data-translate="home.showsText">Διαθέσιμες για ξενοδοχεία, ταβέρνες και εκδηλώσεις</p>
                         </div>
                     </div>
                 </div>
@@ -249,35 +253,35 @@
                     <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdaallzg" method="POST">
                         <input type="hidden" name="_subject" value="Νέο μήνυμα από Alios Website">
                         <div class="form-group">
-                            <label for="name">Όνομα *</label>
+                            <label for="name" data-translate="home.formName">Όνομα *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email *</label>
+                            <label for="email" data-translate="home.formEmail">Email *</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Τηλέφωνο</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+30 XXX XXX XXXX">
+                            <label for="phone" data-translate="home.formPhone">Τηλέφωνο</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+30 XXX XXX XXXX" data-translate-placeholder="home.formPhonePlaceholder">
                         </div>
                         <div class="form-group">
-                            <label for="interest">Ενδιαφέρομαι για *</label>
+                            <label for="interest" data-translate="home.formInterest">Ενδιαφέρομαι για *</label>
                             <select id="interest" name="interest" required>
-                                <option value="">Επιλέξτε...</option>
-                                <option value="join">Έλα στην παρέα μας - Μάθε και χόρεψε μαζί μας</option>
-                                <option value="collaborate">Συνεργάσου μαζί μας - Οργάνωσε παράσταση</option>
-                                <option value="other">Άλλο</option>
+                                <option value="" data-translate="home.formInterestSelect">Επιλέξτε...</option>
+                                <option value="join" data-translate="home.formInterestJoin">Έλα στην παρέα μας - Μάθε και χόρεψε μαζί μας</option>
+                                <option value="collaborate" data-translate="home.formInterestCollaborate">Συνεργαστείτε μαζί μας - Οργανώστε παράσταση</option>
+                                <option value="other" data-translate="home.formInterestOther">Άλλο</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Θέμα *</label>
+                            <label for="subject" data-translate="home.formSubject">Θέμα *</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Μήνυμα *</label>
+                            <label for="message" data-translate="home.formMessage">Μήνυμα *</label>
                             <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Αποστολή Μηνύματος</button>
+                        <button type="submit" class="btn btn-primary" data-translate="home.formSubmit">Αποστολή Μηνύματος</button>
                         <div class="form-message" id="formMessage"></div>
                     </form>
                 </div>
@@ -291,22 +295,22 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="https://www.alios-corfu.com/wp-content/uploads/2020/09/cropped-ALIOS-LOGO-150x150.jpg" alt="Alios Logo" class="footer-logo">
-                    <h3>Ο Άλιος</h3>
-                    <p>Χορευτικό Συγκρότημα στην Κέρκυρα</p>
+                    <h3 data-translate="footer.name">Ο Άλιος</h3>
+                    <p data-translate="footer.subtitle">Χορευτικό Συγκρότημα στην Κέρκυρα</p>
                     <p class="footer-url">www.alios-corfu.com</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Σύνδεσμοι</h4>
+                    <h4 data-translate="footer.links">Σύνδεσμοι</h4>
                     <ul>
-                        <li><a href="index.html">Αρχική</a></li>
-                        <li><a href="about.html">Σχετικά</a></li>
-                        <li><a href="index.html#contact">Eπικοινωνία</a></li>
-                        <li><a href="join.html">Πληροφορίες για ενδιαφερόμενους χορευτές</a></li>
-                        <li><a href="collaborate.html">Πληροφορίες για οργάνωση παραστάσεων</a></li>
+                        <li><a href="index.html" data-translate="nav.home">Αρχική</a></li>
+                        <li><a href="about.html" data-translate="nav.about">Σχετικά</a></li>
+                        <li><a href="index.html#contact" data-translate="nav.contact">Eπικοινωνία</a></li>
+                        <li><a href="join.html" data-translate="footer.linkInfo">Πληροφορίες για ενδιαφερόμενους χορευτές</a></li>
+                        <li><a href="collaborate.html" data-translate="footer.linkCollaborate">Πληροφορίες για οργάνωση παραστάσεων</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Επικοινωνία</h4>
+                    <h4 data-translate="footer.contact">Επικοινωνία</h4>
                     <p>
                         <a href="mailto:paipetis.a@gmail.com">paipetis.a@gmail.com</a>
                     </p>
@@ -335,6 +339,8 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
+    <script src="translation.js"></script>
     <script src="script.js"></script>
     <script src="contact.js"></script>
 </body>

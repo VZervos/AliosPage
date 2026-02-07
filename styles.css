@@ -162,6 +162,35 @@ a {
     margin-left: auto;
 }
 
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#languageSwitcher {
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 50px;
+    text-align: center;
+}
+
+#languageSwitcher:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+#languageSwitcher:active {
+    transform: translateY(0);
+}
+
 
 .nav-menu a {
     font-weight: 500;
@@ -1124,6 +1153,16 @@ section {
     .nav-menu a {
         font-size: 18px;
         width: 100%;
+    }
+
+    .language-switcher {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #languageSwitcher {
+        width: 100%;
+        padding: 12px 24px;
     }
 
     .mobile-menu-toggle {
